@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="132" height="25" viewBox="0 0 132 25">
+  <g id="logo" transform="translate(-50 -31)">
+    <path id="_ionicons_svg_md-locate" d="M44.5,40.036A4.464,4.464,0,1,0,48.964,44.5,4.477,4.477,0,0,0,44.5,40.036ZM55.155,43.31a10.755,10.755,0,0,0-9.465-9.464V32H43.31v1.845a10.755,10.755,0,0,0-9.465,9.464H32V45.69h1.845a10.755,10.755,0,0,0,9.465,9.465V57H45.69V55.155a10.755,10.755,0,0,0,9.465-9.465H57V43.31ZM44.5,52.833A8.333,8.333,0,1,1,52.833,44.5,8.358,8.358,0,0,1,44.5,52.833Z" transform="translate(18 -1)" fill="#fff"/>
+    <text id="CenterLogistic" transform="translate(90 49)" fill="#fff" font-size="15" font-family="PTSans-Bold, PT Sans" font-weight="700"><tspan x="0" y="0">CenterLogistic</tspan></text>
+  </g>
+</svg>
