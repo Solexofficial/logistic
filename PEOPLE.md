@@ -1,1 +1,0 @@
-logistic$echo 'Create people md' > PEOPLE.md
