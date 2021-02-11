@@ -1,0 +1,1 @@
+echo 'Hello, GIT' > README.md
