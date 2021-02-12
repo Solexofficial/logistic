@@ -126,7 +126,7 @@ $(function () {
                 transform: "translateY(0)",
                 opacity: "1",
             });
-        });
+        }, 100);
     });
 
     $("[data-modal-close]").on("click", function (event) {
@@ -154,7 +154,7 @@ $(function () {
         setTimeout(function () {
             $("body").removeClass("no-scroll");
             modal.removeClass("show");
-        }, 200);
+        }, 100);
     }
 
     //?----------- Slick slider https://kenwheeler.github.io/slick/ ------------//
