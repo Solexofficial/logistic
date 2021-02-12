@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
 
@@ -291,7 +292,7 @@ ol {
     height: 100%;
     overflow: hidden;
 
-    background: #04222a url("../images/intro-bg.jpg") no-repeat center;
+    background: #04222a url("../images/slider/slide-1.jpg") no-repeat center;
     background-size: cover;
 
     position: absolute;
@@ -570,6 +571,7 @@ ol {
     color: #585858;
     font-size: 16px;
 }
+
 .services__footer {
     margin-top: auto;
 }
@@ -843,6 +845,7 @@ ol {
 .benefits-list__item:not(:last-child) {
     margin-bottom: 35px;
 }
+
 .benefits-list__title {
     margin-bottom: 12px;
     font-family: "Lato", sans-serif;
@@ -851,6 +854,7 @@ ol {
     line-height: 1.2;
     color: #2c2c2c;
 }
+
 .benefits-list__text {
     font-size: 16px;
     color: #585858;
@@ -996,6 +1000,7 @@ ol {
     max-width: none;
     margin-bottom: 45px;
 }
+
 .articles--column .articles__item:last-child {
     margin-bottom: 0;
 }
@@ -1307,9 +1312,14 @@ ol {
 
 /* Media Queries */
 @media (max-width: 991px) {
+
     /* Intro */
     .intro__title {
         font-size: 90px;
+    }
+
+    .intro__slider-arrows {
+        display: none;
     }
 
     /* Section */
@@ -1336,6 +1346,7 @@ ol {
         justify-content: center;
         margin: 0 -15px;
     }
+
     .clients__list li {
         max-width: none;
         width: 33.33333%;
@@ -1376,6 +1387,7 @@ ol {
 }
 
 @media (max-width: 767px) {
+
     /* Header */
     .header__inner {
         height: 50px;
@@ -1385,8 +1397,8 @@ ol {
     .nav {
         opacity: 0;
         width: 100%;
-        height: auto;
-        min-height: calc(100vh - 50px);
+        height: calc(100vh - 50px);
+        overflow: auto;
         padding-top: 5px;
         flex-direction: column;
         position: absolute;
@@ -1448,10 +1460,6 @@ ol {
         transform: translate3d(-50%, -50%, 0);
     }
 
-    .intro__slider-arrows {
-        display: none;
-    }
-
     /* Request-form */
     .request-form--intro {
         order: 2;
@@ -1487,6 +1495,7 @@ ol {
     .team__col {
         width: 100%;
     }
+
     .team__col:last-child {
         margin-bottom: 0;
     }
@@ -1531,6 +1540,7 @@ ol {
 }
 
 @media (max-width: 575px) {
+
     /* Section */
     .section {
         padding: 30px 0;
@@ -1554,6 +1564,7 @@ ol {
         padding-top: 50px;
         padding-bottom: 10px;
     }
+
     .services__item {
         width: 100%;
     }

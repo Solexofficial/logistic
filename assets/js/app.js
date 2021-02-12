@@ -167,9 +167,9 @@ $(function () {
         SlidesToScroll: 1,
         arrows: false,
         fade: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 4000,
-        speed: 500,
+        speed: 1000,
     });
 
     $("#introSliderPrev").on("click", function () {
