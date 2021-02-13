@@ -95,11 +95,37 @@ ol {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+
 .header__inner {
     height: 85px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header__logo-img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header__logo--black {
+    text-decoration: none;
+    color: #2c2c2c;
+    vertical-align: middle;
+}
+
+.header__logo-text {
+    margin-left: 11px;
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    top: 2px;
+
 }
 
 /* Nav */
@@ -396,7 +422,10 @@ ol {
 
     background: none;
     border: 0;
+    border-radius: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    appearance: none;
+    box-shadow: none;
 
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
@@ -1129,9 +1158,10 @@ ol {
     background-color: #fff;
 
     opacity: 0;
-
     transform: translateY(-100px);
+
     transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+
 }
 
 .modal__header {

@@ -113,7 +113,10 @@ $(function () {
 
     //?----------- Modal ------------//
     // !ДОПИСАТЬ КОММЕНТАРИИ!!!!!!!!!!!!!!!!
-
+    // Делаем выборку по аттр. дата-модал, по клику вызывает функцию
+    // задаем переменную модал, которая принимает в себя то модальное окно на которое кликнули с дата аттр(модал)
+    // убираем у body скролл, показываем модальное окно
+    // set.timeout задает анимацию выпадения модального окна сверху, скорость 100мс
     $("[data-modal]").on("click", function (event) {
         event.preventDefault();
         let modal = $(this).data("modal");
@@ -129,18 +132,21 @@ $(function () {
         }, 100);
     });
 
+    //  Вызываем функцию на кнопку(крестик)
+    //  в переменную модал передаем, у этого окна родитель класса .modal
+    // Вызываем функцию modal.close (которая принимает в себя параметр всех предков данного модального окна)
     $("[data-modal-close]").on("click", function (event) {
         event.preventDefault();
         let modal = $(this).parents(".modal");
         modalClose(modal);
     });
-
+    //
     $(".modal").on("click", function () {
         let modal = $(this);
 
         modalClose(modal);
     });
-
+    // Отменяем закрытие модального окна по клику на контент
     $(".modal__content").on("click", function (event) {
         event.stopPropagation();
     });
@@ -157,6 +163,23 @@ $(function () {
         }, 100);
     }
 
+    $("#submitbtn").on("click", function (event) {
+        event.preventDefault();
+
+        let becomeClientModal = $("#becomeClientModal");
+        let thanksmodal = $("#thanksModal");
+
+        becomeClientModal.removeClass("show");
+        thanksmodal.addClass("show");
+
+        setTimeout(function () {
+            thanksmodal.find(".modal__content").css({
+                transform: "translateY(0)",
+                opacity: "1",
+            });
+        }, 200);
+    });
+
     //?----------- Slick slider https://kenwheeler.github.io/slick/ ------------//
     //?----------- Intro Slider------------//
     let introSlider = $("#introSlider");
@@ -166,7 +189,7 @@ $(function () {
         slidesToShow: 1,
         SlidesToScroll: 1,
         arrows: false,
-        fade: true,
+        fade: false,
         autoplay: true,
         autoplaySpeed: 4000,
         speed: 1000,

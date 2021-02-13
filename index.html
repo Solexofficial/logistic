@@ -7,9 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=PT+Sans&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/slick.css?v=1.0.0">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.0.0">
+    <link rel="stylesheet" href="assets/css/aos.css?v=1.0.0">
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
@@ -29,9 +29,12 @@
         <header class="header" id="header">
             <div class="container">
                 <div class="header__inner">
-                    <a href="#" data-scroll="#intro">
-                        <img class="img" src="/assets/images/logo.svg" alt="CentralLogistic">
+
+                    <a class="header__logo" href="#" data-scroll="#intro">
+                        <img class="header__logo-img" src="/assets/images/logo.svg" alt="CentralLogistic">
+                        <span class="header__logo-text">CentralLogistic</span>
                     </a>
+
 
                     <nav class="nav" id="nav">
                         <a class="nav__link" href="#" data-scroll="#services">Services</a>
@@ -96,8 +99,9 @@
                                 <div class="form__group">
                                     <input class="input input--email" type="email" placeholder="Your email">
                                 </div>
-                                <button class="btn btn--block btn--orange" type="submit"
-                                    data-modal="#becomeClientModal">Call me back</button>
+                                <button class="btn btn--block btn--orange" type="submit" data-modal="#thanksModal">Call
+                                    me
+                                    back</button>
 
                             </form>
                         </div>
@@ -459,7 +463,12 @@
         <!-- Footer -->
         <footer class="footer text-center">
             <div class="container">
-                <img src="assets/images/logo-black.svg" alt="Logo">
+
+                <a class="header__logo--black" href="#" data-scroll="#intro">
+                    <img class="header__logo-img" src="/assets/images/logo-black.svg" alt="CentralLogistic">
+                    <span class="header__logo-text">CentralLogistic</span>
+                </a>
+
                 <address class="footer__contacts">
                     <p>New york, Street, Zip code</p>
                     <p>Call Us: <a href="tel:+9948373123"> +9948373123</a> or E-mail: <a
@@ -498,7 +507,8 @@
                         <div class="form__group">
                             <input class="input input--dark input--email" type="email" placeholder="Your email">
                         </div>
-                        <button class="btn btn--block btn--orange" type="submit" data-modal="#thanksModal">Call me
+                        <button class="btn btn--block btn--orange" type="submit" id="submitbtn">Call
+                            me
                             back</button>
                     </form>
 
@@ -522,27 +532,28 @@
 
         <div class="modal" id="thanksModal">
             <div class="modal__inner">
-                <div class="modal__header">
-                    <img class="modal__icon" src="assets/images/tick.svg" alt="">
-                    <h4 class="modal__title">Thanks for your request</h4>
-                    <div class="modal__text">
-                        <p>We call you back as soon as possible!</p>
+                <div class="modal__content">
+                    <div class="modal__header">
+                        <img class="modal__icon" src="assets/images/tick.svg" alt="">
+                        <h4 class="modal__title">Thanks for your request</h4>
+                        <div class="modal__text">
+                            <p>We call you back as soon as possible!</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="modal__footer">
-                    <h4 class="modal__footer-title">Our Contacts</h4>
-                    <address class="modal__contacts">
-                        <p>New York, Street, ZIP CODE</p>
-                        <p>Phone: <a href="tel:+9948373123"> +9948373123</a></p>
-                        <p>E-mail: <a href="mailto:hello@centerlogistic.com"> hello@centerlogistic.com</a></p>
-                    </address>
-                </div>
+                    <div class="modal__footer">
+                        <h4 class="modal__footer-title">Our Contacts</h4>
+                        <address class="modal__contacts">
+                            <p>New York, Street, ZIP CODE</p>
+                            <p>Phone: <a href="tel:+9948373123"> +9948373123</a></p>
+                            <p>E-mail: <a href="mailto:hello@centerlogistic.com"> hello@centerlogistic.com</a></p>
+                        </address>
+                    </div>
+                    <button class="modal__close" data-modal-close="">
+                        <img src="assets/images/close.svg" alt="close">
+                    </button>
 
-                <button class="modal__close">
-                    <img src="assets/images/close.svg" alt="close">
-                </button>
-
+                </div> <!-- ./modal__content -->
             </div> <!-- ./modal__inner  -->
         </div> <!-- ./modal -->
 
