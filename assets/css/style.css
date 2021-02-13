@@ -444,15 +444,15 @@ ol {
 }
 
 .input--user {
-    background: url(/assets/images/user-icon.svg) left 15px top 5px no-repeat;
+    background: url(assets/images/user-icon.svg) left 15px top 5px no-repeat;
 }
 
 .input--phone {
-    background: url(/assets/images/phone-icon.svg) left 15px top 5px no-repeat;
+    background: url(assets/images/phone-icon.svg) left 15px top 5px no-repeat;
 }
 
 .input--email {
-    background: url(/assets/images/mail-icon.svg) left 15px top 6px no-repeat;
+    background: url(assets/images/mail-icon.svg) left 15px top 6px no-repeat;
 }
 
 .input--dark {
@@ -469,15 +469,15 @@ ol {
 }
 
 .input--dark.input--user {
-    background-image: url(/assets/images/user-black-icon.svg);
+    background-image: url(assets/images/user-black-icon.svg);
 }
 
 .input--dark.input--phone {
-    background-image: url(/assets/images/phone-black-icon.svg);
+    background-image: url(assets/images/phone-black-icon.svg);
 }
 
 .input--dark.input--email {
-    background-image: url(/assets/images/mail-black-icon.svg);
+    background-image: url(assets/images/mail-black-icon.svg);
 }
 
 /* Btn */
