@@ -1,3 +1,4 @@
-# study project logistic company
-https://solexofficial.github.io/logistic/
+# Сайт транспортной компании. Адаптивная кроссбраузерная верстка.
+# https://solexofficial.github.io/logistic/
+
 
